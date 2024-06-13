@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Sidebar Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo.png" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="slider">
+      <header class="img-text">
+        <div class="img-con"><img src="logo.png" alt="logo" id="img" /></div>
+        <div class="text-con">
+          <span id="head">Codespan</span>
+          <span id="des">MERN Developer</span>
+        </div>
+        <div class="resp-arrow">
+          <i class="bx bx-chevron-left" id="arrow"></i>
+        </div>
+      </header>
+
+      <div class="menu-con">
+        <li class="search-con">
+          <box-icon
+            name="search"
+            color="var(--text-color )"
+            class="icon"
+            id="search-icon"
+          ></box-icon>
+          <input type="text" placeholder="Search..." />
+        </li>
+        <li class="menu-list">
+          <box-icon
+            name="home-alt"
+            color="var(--text-color )"
+            class="icon"
+          ></box-icon>
+          <span>Dashboard</span>
+        </li>
+        <li class="menu-list">
+          <box-icon
+            name="bar-chart-alt-2"
+            color="var(--text-color )"
+            class="icon"
+          ></box-icon>
+          <span>Revenue</span>
+        </li>
+        <li class="menu-list">
+          <box-icon
+            name="bell"
+            color="var(--text-color )"
+            class="icon"
+          ></box-icon>
+          <span>Notification</span>
+        </li>
+        <li class="menu-list">
+          <box-icon
+            name="pie-chart-alt"
+            color="var(--text-color )"
+            class="icon"
+          ></box-icon>
+          <span>Analytics</span>
+        </li>
+        <li class="menu-list">
+          <box-icon
+            name="heart"
+            color="var(--text-color )"
+            class="icon"
+          ></box-icon>
+          <span>Likes</span>
+        </li>
+        <li class="menu-list">
+          <box-icon
+            name="wallet"
+            color="var(--text-color )"
+            class="icon"
+          ></box-icon>
+          <span>Wallets</span>
+        </li>
+
+        <div class="bottom-list">
+          <li class="menu-list">
+            <box-icon
+              name="log-out"
+              color="var(--text-color )"
+              class="icon"
+            ></box-icon>
+            <span>Logout</span>
+          </li>
+          <li class="menu-list">
+            <box-icon
+              name="moon"
+              color="var(--text-color )"
+              class="icon"
+              id="moon"
+            ></box-icon>
+            <i class="bx bx-sun" class="icon" id="sun"></i>
+            <span id="mode">Dark mode</span>
+            <span class="toggle-btn"></span>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section class="main"><h1>Dashboard Sidebar</h1></section>
+    <script src="script.js"></script>
+  </body>
+</html>
